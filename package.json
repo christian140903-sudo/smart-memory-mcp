@@ -1,0 +1,39 @@
+{
+  "name": "smart-memory-mcp",
+  "version": "1.0.0",
+  "description": "Persistent memory with semantic search for AI agents. Works with Claude Code, Cursor, Windsurf, and any MCP client.",
+  "type": "module",
+  "bin": {
+    "smart-memory-mcp": "./server.js"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "mcp",
+    "memory",
+    "ai",
+    "claude",
+    "cursor",
+    "windsurf",
+    "semantic-search",
+    "tfidf",
+    "persistent-memory",
+    "knowledge-base",
+    "model-context-protocol"
+  ],
+  "author": "NexTool <christianjunbucher@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/christian140903-sudo/smart-memory-mcp"
+  },
+  "homepage": "https://nextool.app/memory",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1"
+  }
+}
