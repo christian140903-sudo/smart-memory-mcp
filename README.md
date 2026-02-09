@@ -20,7 +20,7 @@ Works with **Claude Code**, **Cursor**, **Windsurf**, and any MCP-compatible cli
 ### Claude Code
 
 ```bash
-claude mcp add memory -- npx smart-memory-mcp
+claude mcp add memory -- npx mcp-smart-memory
 ```
 
 ### Cursor / Windsurf / Other MCP Clients
@@ -32,7 +32,7 @@ Add to your MCP configuration:
   "mcpServers": {
     "memory": {
       "command": "npx",
-      "args": ["smart-memory-mcp"]
+      "args": ["mcp-smart-memory"]
     }
   }
 }
@@ -86,12 +86,12 @@ memory_suggest: "I'm debugging a memory leak in a React component"
   "mcpServers": {
     "work-memory": {
       "command": "npx",
-      "args": ["smart-memory-mcp"],
+      "args": ["mcp-smart-memory"],
       "env": { "SMART_MEMORY_DB": "work" }
     },
     "personal-memory": {
       "command": "npx",
-      "args": ["smart-memory-mcp"],
+      "args": ["mcp-smart-memory"],
       "env": { "SMART_MEMORY_DB": "personal" }
     }
   }
